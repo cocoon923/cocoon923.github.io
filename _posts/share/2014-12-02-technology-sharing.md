@@ -1,12 +1,10 @@
 ---
-layout: post
+layout: page
 category : sharing
 tags : [sharing, technology]
 ---
 
 # 技术分享
-
-标签（空格分隔）： 技术
 
 ---
 
