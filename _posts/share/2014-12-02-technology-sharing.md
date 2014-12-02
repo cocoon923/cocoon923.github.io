@@ -12,6 +12,8 @@ tags : [sharing, technology]
 
 本文主要是一些工具、开源框架等相关的介绍、使用场景等。
 
+每一章节都可以展开很多内容，本文仅做最基本的介绍，如果对于某些章节感兴趣，请回复我，然后根据需要，再整理更加详细的资料。
+
 ## 一、 工具篇
 
 ### 1. Markdown
@@ -33,7 +35,7 @@ _注：本文的编写参考了[如何编写Markdown语法的邮件][markdown.2]
 [markdown.3]: https://www.zybuluo.com/mdeditor
 
 
-### 2.Jekyll
+### 2. Jekyll
 
 [Jekyll][jekyll.1]是一个静态站点生成器，它会根据网页源码生成静态文件。它提供了模板、变量、插件等功能，所以实际上可以用来编写整个网站。
 如果以前你使用Wordpress写博客，Jekyll同样提供了方便的迁移方法，见[博客迁移][jekyll.2]。
@@ -55,7 +57,7 @@ _注：本文的编写参考了[如何编写Markdown语法的邮件][markdown.2]
 [jekyll.4]: http://www.zhihu.com/question/21981094
 
 
-### 3.Emacs
+### 3. Emacs
 
 [Emacs][emacs.1]是一个文本编辑器家族，具有强大的可扩展性，在程序员和其他以技术工作为主的计算机用户中广受欢迎。
 
@@ -65,7 +67,7 @@ _注：本文的编写参考了[如何编写Markdown语法的邮件][markdown.2]
 [emacs.2]: http://blog.csdn.net/redguardtoo/article/details/7222501
 
 
-### 4.Github
+### 4. Github
 
 > GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers.
 > Over seven million people use GitHub to build amazing things together.
@@ -77,10 +79,81 @@ _注：这篇博客的作者的其他博文也一样很精彩，推荐阅读。_
 
 关于Git的使用推荐两个教程：
 
-- [git-简明指南][github.3]
+- [Git-简明指南][github.3]
 - [Pro Git][github.4]
 
 [github.1]: https://github.com
 [github.2]: http://www.yangzhiping.com/tech/github.html
 [github.3]: http://rogerdudler.github.io/git-guide/index.zh.html
 [github.4]: http://git-scm.com/book/zh/v1
+
+
+## 二、 Java篇
+
+### 1. Maven
+
+> Apache Maven is a software project management and comprehension tool.
+> Based on the concept of a project object model (POM), Maven can manage a project's build,
+> reporting and documentation from a central piece of information.
+
+以上关于Maven的介绍引自其[官网][maven.1]。
+
+推荐许晓斌（《Maven实战》作者）博客：
+
+- [iteye][maven.2]博客已经不维护，但依然有很多值得看的文章
+- [Juven Xu][maven.3]博客
+
+_注：Maven官网、以上两个博客以及Maven实战这些资料已经足够Maven的入门。_
+_如果需要了解更多，如Maven的原理、Plugin和Archetype的编写等。_
+_这些主题，官方文档只是介绍了基本，因此需要自己去摸索，或者去[Stackoverflow][maven.4]等网站寻找资料。_
+
+除了Maven，可能你还需要了解Maven私服，如：[Nexus][maven.5]等。
+
+
+[maven.1]: http://maven.apache.org/
+[maven.2]: http://juvenshun.iteye.com/
+[maven.3]: http://www.juvenxu.com/
+[maven.4]: http://stackoverflow.com/
+[maven.5]: http://www.sonatype.com/nexus
+
+
+### 2. Jenkins
+
+[Jenkins][jenkins:1]是一个开源软件项目，旨在提供一个开放易用的软件平台，使持续集成变成可能。Jenkins的前身是[Hudson][jenkins:2]项目。
+
+主要用于：
+
+- 持续、自动地构建/测试软件项目，如CruiseControl与DamageControl。
+- 监控一些定时执行
+
+[jenkins:1]: http://jenkins-ci.org/
+[jenkins:2]: http://hudson-ci.org/
+
+
+### 3. Redis
+
+[Redis][redis:1]是一个开源、支持网络、基于内存、键值对存储数据库，使用ANSI C编写。
+
+关于使用：[Redis命令参考][redis:2]
+Windows客户端：[Redis Desktop Manager][redis:3]
+
+相信会用`java.util.Map`，都会觉得使用Redis很简单。
+而Redis的关键应该是键值设计和内存优化，这一点经常被忽略。
+
+**Redis应该有更好的用处，而不仅仅是做二级缓存。**
+
+- [什么样的硬件设备在支撑 Stack Overflow？][redis:4]
+- [成人网站YouPorn使用Redis之经验谈][redis:5]
+- [Twitter 高并发高可用架构][redis:6]
+
+Redis另一个值得学习的地方，即 **[源码][redis:7]**。
+Redis的代码写的很整洁，并且代码量相对较小（4.5万行左右），大部分都是单线程的，依赖也很少。
+所有的依赖都跟源代码放在一起了，这中做法让编译它变得非常简单：clone它的库，然后输入make即可。
+
+[redis:1]: http://redis.io/
+[redis:2]: http://redis.readthedocs.org/en/latest/index.html
+[redis:3]: http://redisdesktop.com/
+[redis:4]: http://blog.jobbole.com/61646/
+[redis:5]: http://blog.jobbole.com/44629/
+[redis:6]: http://blog.jobbole.com/44059/
+[redis:7]: https://github.com/antirez/redis
