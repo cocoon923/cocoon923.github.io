@@ -207,7 +207,7 @@ Java NIO(New IO)是一个可以替代标准Java IO API的IO API（从Java 1.4开
 
 推荐官方的[Documents][jetty.2]。
 
-> 特性（引自官网）：
+> Features:
 >
 > - Full-featured and standards-based
 > - Open source and commercially usable
@@ -220,3 +220,15 @@ Java NIO(New IO)是一个可以替代标准Java IO API的IO API（从Java 1.4开
 
 [jetty.1]: http://eclipse.org/jetty/
 [jetty.2]: http://www.eclipse.org/jetty/documentation/current/
+
+
+### 7. Spring Boot
+
+[Spring Boot][spring.2]是[Spring][spring.1]产品中一个新的子项目，
+该项目旨在帮助开发者更容易地创建基于Spring的应用程序和服务，使得现有的和新的Spring开发者能够最快速地获得所需要的Spring功能。
+
+[spring.io网站本身][spring.1]就是采用Spring Boot构建，现在[整个网站已经开源][spring.3]，作为Spring的一个参考应用。
+
+[spring.1]: http://spring.io/
+[spring.2]: http://projects.spring.io/spring-boot/
+[spring.3]: http://spring.io/blog/2014/03/27/project-sagan-open-sourcing-spring-io
