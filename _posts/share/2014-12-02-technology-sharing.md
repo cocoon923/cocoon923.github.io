@@ -88,7 +88,7 @@ _注：这篇博客的作者的其他博文也一样很精彩，推荐阅读。_
 [github.4]: http://git-scm.com/book/zh/v1
 
 
-## 二、 Java篇
+## 二、 框架篇
 
 ### 1. Maven
 
@@ -116,8 +116,23 @@ _这些主题，官方文档只是介绍了基本，因此需要自己去摸索�
 [maven.4]: http://stackoverflow.com/
 [maven.5]: http://www.sonatype.com/nexus
 
+### 2. Gradle
 
-### 2. Jenkins
+[Gradle][gradle.1] 是以 [Groovy][gradle.2] 语言为基础，面向Java应用为主。基于DSL（领域特定语言）语法的自动化构建工具。
+
+Gradle可以很好的集成Ant和Maven。
+
+[Gradle User Guide][gradle.3]是非常好的参考资料。
+你可以通过[中文翻译版本][gradle.4]查看，当然翻译工作还在进行中，你可以在[Github][gradle.5]中Fork下来，并贡献你的翻译。
+
+[gradle.1]: http://www.gradle.org/
+[gradle.2]: http://groovy.codehaus.org/
+[gradle.3]: http://www.gradle.org/docs/current/userguide/userguide.html
+[gradle.4]: http://pkaq.github.io/gradledoc/docs/userguide/userguide.html
+[gradle.5]: https://github.com/pkaq/gradledoc
+
+
+### 3. Jenkins
 
 [Jenkins][jenkins:1]是一个开源软件项目，旨在提供一个开放易用的软件平台，使持续集成变成可能。Jenkins的前身是[Hudson][jenkins:2]项目。
 
@@ -130,11 +145,12 @@ _这些主题，官方文档只是介绍了基本，因此需要自己去摸索�
 [jenkins:2]: http://hudson-ci.org/
 
 
-### 3. Redis
+### 4. Redis
 
 [Redis][redis:1]是一个开源、支持网络、基于内存、键值对存储数据库，使用ANSI C编写。
 
 关于使用：[Redis命令参考][redis:2]
+
 Windows客户端：[Redis Desktop Manager][redis:3]
 
 相信会用`java.util.Map`，都会觉得使用Redis很简单。
@@ -157,3 +173,49 @@ Redis的代码写的很整洁，并且代码量相对较小（4.5万行左右）
 [redis:5]: http://blog.jobbole.com/44629/
 [redis:6]: http://blog.jobbole.com/44059/
 [redis:7]: https://github.com/antirez/redis
+
+
+### 5. NIO(MINA/Netty)
+
+Java NIO(New IO)是一个可以替代标准Java IO API的IO API（从Java 1.4开始)，Java NIO提供了与标准IO不同的IO工作方式。
+
+相关资料：
+
+- [解读Java NIO技术][nio.1]
+- [Java NIO 系列教程][nio.2]
+
+[**Apache MINA**][nio.3](Multipurpose Infrastructure for Network Applications) 是 Apache 组织一个较新的项目，
+它为开发高性能和高可用性的网络应用程序提供了非常便利的框架。
+
+[**Netty**][nio.4]是一个高性能、异步事件驱动的NIO框架，它提供了对TCP、UDP和文件传输的支持，作为一个异步NIO框架，Netty的所有IO操作都是异步非阻塞的，
+通过Future-Listener机制，用户可以方便的主动获取或者通过通知机制获得IO操作结果。
+
+作为当前最流行的NIO框架，Netty在互联网领域、大数据分布式计算领域、游戏行业、通信行业等获得了广泛的应用，一些业界著名的开源组件也基于Netty的NIO框架构建。
+
+推荐官网的[User Guide][nio.5]。
+
+[nio.1]: http://developer.51cto.com/art/201112/307172.htm
+[nio.2]: http://ifeve.com/java-nio-all/
+[nio.3]: https://mina.apache.org/
+[nio.4]: http://netty.io/
+[nio.5]: http://netty.io/wiki/user-guide.html
+
+
+### 6. Jetty
+
+[Jetty][jetty.1] 是一个开源的servlet容器，它为基于Java的web容器，例如JSP和servlet提供运行环境。
+
+推荐官方的[Documents][jetty.2]。
+
+> 特性（引自官网）：
+> - Full-featured and standards-based
+> - Open source and commercially usable
+> - Flexible and extensible
+> - Small footprint
+> - Embeddable
+> - Asynchronous
+> - Enterprise scalable
+> - Dual licensed under Apache and Eclipse
+
+[jetty.1]: http://eclipse.org/jetty/
+[jetty.2]: http://www.eclipse.org/jetty/documentation/current/
