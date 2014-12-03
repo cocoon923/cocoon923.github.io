@@ -207,15 +207,15 @@ Java NIO(New IO)是一个可以替代标准Java IO API的IO API（从Java 1.4开
 
 推荐官方的[Documents][jetty.2]。
 
-> 特性（引自官网）：
-> - Full-featured and standards-based
-> - Open source and commercially usable
-> - Flexible and extensible
-> - Small footprint
-> - Embeddable
-> - Asynchronous
-> - Enterprise scalable
-> - Dual licensed under Apache and Eclipse
+特性（引自官网）：
+- Full-featured and standards-based
+- Open source and commercially usable
+- Flexible and extensible
+- Small footprint
+- Embeddable
+- Asynchronous
+- Enterprise scalable
+- Dual licensed under Apache and Eclipse
 
 [jetty.1]: http://eclipse.org/jetty/
 [jetty.2]: http://www.eclipse.org/jetty/documentation/current/
